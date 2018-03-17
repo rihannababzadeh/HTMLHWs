@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded" >
+    <fieldset>
+        <legend>User Form</legend>
+        <label for="nameid">Name:</label>
+        <br>
+        <input type="text" name="username" placeholder="username" size="30"  maxlength="12" id="nameid">
+        <br>
+        <label for="passid">password:</label><br>
+        <input type="password" name="username" placeholder="password" size="30"  maxlength="8" id="passid"><br>
+        <br>  <label>Select your favourite superheroe:</label> <br>
+        <input type="radio" name="Superman" value="Superman" checked> Superman<br>
+        <input type="radio" name="Batman" value="Batman"> Batman<br>
+        <input type="radio" name="Wonder Woman" value="Wonder Woman"> Wonder Woman <br>
+        <input type="radio" name="Flash" value="Flash"> Flash <br>
+        <input type="radio" name="Thor" value="Thor"> Thor<br>
+        <input type="radio" name="Hulk" value="Hulk"> Hulk<br>
+        <label>Select your favourite video game<br></label> 
+        <input type="checkbox" name="videogames" value="NHL" > NHL <br>
+        <input type="checkbox" name="videogames" value="Fifa" checked> Fifa<br>
+        <input type="checkbox" name="videogames" value="Residen Evil"> Residen Evil<br>
+        <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted<br>
+        <input type="hidden" name="userid" value="2300" >
+        <input type="image" src="img/register-button.png" alt="Submit" width="90" height="48">
+
+    </fieldset>
+    </form>
+</body>
+</html>

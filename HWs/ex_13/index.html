@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr>
+     
+    
+    <form>
+        <DIV>
+        <label for="Name">Name input</label>
+        <textarea name="name"  cols="100" rows="5" placeholder="name" id="Name" ></textarea>
+      </DIV>
+      <div>
+        <label>Select Hero name:</label>
+      <select name="heros">
+          <option value="Deadpool">Deadpool </option>
+          <option value="batman_vs_superman">Batman v Superman</option>
+          <option value="civil_war">Captain America: Civil War</option>
+          <option value="Doctor Strange">doctor_strange</option>
+          <option value="suicide_squad">Suicide Squad  </option>
+          <option value="apocalypse">X-Men: Apocalypse</option>
+          <option value=" Guardians of the Galaxy Vol 2"> gotg_vol2</option>
+          <option value="Justice League">justice_league</option>
+          <option value=" Logan ">logan</option>
+          <option value="Spider-Man: Homecoming ">homecoming </option>
+          <option value=" wonder_woman" selected>Wonder Woman</option>
+          <option value="Thor: Ragnarok">thor_ragnarok</option>
+          <option value="Black Panther">black_panther</option>
+        </select>
+      </div>  
+      <div>
+      <label for="bio">Please write bio here</label>
+      <textarea name="bio" placeholder="bio"  id="bio"></textarea>
+    </div>
+    <div>
+      <label><br>Upload avatar image here:</label>
+      <form action="upload.php" method="post" accept="image/*" enctype="multipart/form-data">
+        <input type="file" name="filename"/>
+    </div>
+    <div><button value="create" name="create-user"><br>Add new user</button>
+    </div>
+    <div><button value="Clear" name="Clear-Form">Clear Form</button>
+    </div>
+       </form>
+
+</body>
+</html>
