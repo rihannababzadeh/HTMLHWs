@@ -1,0 +1,10 @@
+const firstName="Reyhaneh";
+const lastApellido="Ababzadeh";
+const age=27;
+const dateOfBirth="04/02/1991";
+const address="R3t4J4";
+console.log("firstName:",firstName);
+console.log("lastApellido:",lastApellido);
+console.log("age:",age);
+console.log("dateOfBirth:",dateOfBirth);
+console.log("address:",address);
