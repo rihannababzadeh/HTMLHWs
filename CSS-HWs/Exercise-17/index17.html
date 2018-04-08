@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+    
+   <style>
+     .no1 {
+       font-family: Arial, Helvetica, sans-serif;
+       color: #6e6f74;
+     }
+     .no2 {
+       border-collapse: collapse;
+       font-family: Arial, Helvetica, sans-serif;
+       color: #9068be;
+     }
+     .no1 thead{
+        color:  #685e5c;
+        font-weight: bold;
+     }
+      .no2 thead{
+        color:  #6ed3cf;
+        font-weight: bold;
+     }
+     .no1 tbody tr{
+       border-bottom: 1px solid #ddd;
+     }
+      .no2 tbody tr{
+       border-bottom: 2px solid #685e5c;
+     }
+     .no1 thead th,td{
+       padding: 20px;
+     }
+      .no2 thead th,.no2 tbody td{
+       padding: 30px;
+     }
+     .no1 tbody td:first-child {
+      color: #3e7589;
+       
+     }
+      .no2 tbody td:first-child {
+      color: #e62739;
+       
+     }
+     .no1 tbody tr:last-child{
+      border: none;
+     }
+     .no2 tbody tr:last-child{
+      border: none;
+     }
+     .no1 tfoot{
+         text-align: center;
+     }
+     .no2 tfoot{
+         text-align: left;
+     }     
+     .no1 tfoot a{
+    display: inline-block;
+     text-decoration: none;
+       color: #aaa;
+       margin-right: 10px;
+     }
+      .no2 tfoot a{
+    display: inline-block;
+     text-decoration: none;
+       color: #9068be;
+       margin-right: 10px;
+     }    
+     tfoot a.active{
+       color: white;
+       font-weight: bold;
+       Background-color: #008cba;
+       padding: 10px 15px 10px 15px;
+       border-radius: 10px;
+     }
+     .selected {
+       background: #d9edf6;
+     }
+     .error{
+       background: #f2dedf;
+     }
+
+    </style>
+    
+  </head>
+  <body>
+    <table class="no1">
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr class="selected">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    
+    
+     <table class="no2">
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr class="selected">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
